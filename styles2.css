@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(192, 100%, 9%);
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-image: url('images/bg-hero-mobile.svg');
+    background-color: hsl(193, 100%, 96%);
+    padding-bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.top {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+
+
+.logo img {
+    width: 40%;
+    padding-top: 10px;
+    margin-left: 15px;
+
+}
+
+.free {
+    /* display: inline; */
+    /* float: right; */
+    width: 120px;
+    font-size: 13px;
+    font-weight: 700;
+    color: hsl(192, 100%, 9%);
+    /* margin-right: 20px; */
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    margin-right: 20px;
+    /* padding: 10px 50px 10px 50px; */
+    border-radius: 30px;
+    font-family: 'Open Sans', sans-serif;
+    transition: .05s;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    /* vertical-align: top; */
+}
+
+
+
+.bot-text {
+    text-align: center;
+}
+
+.bot-text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.bot-text p {
+    text-align: center;
+    /* width: 80%; */
+    line-height: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    /* font-weight: 400; */
+}
+
+.getstarted {
+    margin-top: 30px;
+}
+
+.getstarted button {
+    background-color: hsl(322, 100%, 66%);
+    padding: 8px 50px;
+    border: none;
+    border-radius: 30px;
+    color: whitesmoke;
+    font-family: Poppins;
+    font-weight: 600;
+    transition: 0.5s;
+    margin-bottom: 60px;
+}
+
+.getstarted button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.phone-icon {
+    text-align: center;
+}
+
+.phone-icon img {
+    width: 80%;
+}
+
+@media (min-width:500px) {
+    
+    .bot-text{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    .bot-text{
+        /* margin-right: 90px; */
+    }
+    .bot-text h1{
+        font-size: 35px;
+
+    }
+    .bot-text p{
+        
+        width: 490px;
+
+    }
+}
+
+
+@media (min-width:500px) {
+    header {
+        background-image: url('images/bg-hero-desktop.svg');
+
+    }
+
+    .top {
+        display: inline-block;
+        width: 100%;
+        padding: 40px 40px 20px;
+    }
+
+    .logo {
+        width: 500px;
+    }
+
+    .free {
+        float: right;
+        font-size: 15px;
+        margin-right: 20px;
+        /* padding: 10px 50px 10px 50px; */
+        width: 200px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: -45px;
+
+    }
+    .bottom{
+        display: flex;
+        /* flex-wrap: wrap; */
+        /* justify-content: space-between; */
+    }
+   
+    .phone-icon img{
+        width: 800px;
+
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 150px;
+    position: relative;
+}
+
+section {
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.1);
+    padding-top: 60px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    background-color: white;
+}
+
+.pix {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+section img {
+    width: 80%;
+
+}
+
+.illustration-text p {
+    line-height: 23px;
+    color: hsl(208, 11%, 55%);
+
+}
+
+#grow-tog {
+    padding-right: 10px;
+    margin-left: -10px;
+}
+
+#flo-con {
+    padding-right: 20px;
+    margin-left: -10px;
+}
+
+#users {
+    /*  */
+}
+
+.Build {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(192, 100%, 9%);
+    z-index: 1;
+    background-color: white;
+    position: absolute;
+    bottom: -130px;
+    padding-top: 30px;
+    max-width: 700px;
+
+}
+
+.getstarted2 button {
+    background-color: hsl(322, 100%, 66%);
+    padding: 10px 50px;
+    border: none;
+    border-radius: 30px;
+    color: whitesmoke;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 10px;
+    transition: 0.5s;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1);
+
+}
+
+.getstarted2 button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+@media (min-width: 500px) {
+    .Build {
+        font-size: 30px;
+    }
+}
+
+
+
+footer {
+    background: hsl(192, 100%, 9%);
+    color: white;
+    /* font-weight: 200; */
+    font-size: 14px;
+    padding-top: 140px;
+    /* position: absolute; */
+    /* bottom: 0px; */
+    /* left: 0; */
+    width: 100%;
+    margin-top: auto;
+}
+
+.logo2 {
+    /* margin-left: 20px; */
+    padding: 20px;
+}
+
+.filter-white {
+    filter: brightness(0) invert(1);
+    width: 150px;
+}
+
+.minigrid {
+    display: grid;
+    grid-template-columns: 50px 320px;
+    margin-bottom: 30px;
+
+}
+
+.icon {
+    text-align: center;
+    margin-top: 5px;
+}
+
+ul {
+    list-style: none;
+    line-height: 40px;
+    padding: 0;
+    margin-left: 18px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.pr {
+    padding: 0;
+
+}
+
+.rem2 {
+    margin-top: -15px;
+}
+
+.icon i {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.copy {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 12px;
+    /* font-family: Poppins; */
+    font-weight: 100;
+    padding-bottom: 50px;
+}
+
+
+
+@media (min-width: 500px) {
+    .footer-flex {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .copy {
+        float: right;
+        font-size: 14px;
+    }
+
+    .rem1,
+    .rem2 {
+        margin-top: -25px;
+    }
+
+    .logo2 {
+        margin-left: 7%;
+    }
+}
