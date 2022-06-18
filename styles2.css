@@ -71,6 +71,7 @@ header {
     color: hsl(208, 11%, 55%);
     cursor: pointer;
 }
+
 /* TOP- MOST SECTION MEDIA-QUERY */
 
 @media (min-width:500px) {
@@ -149,7 +150,8 @@ header {
 .phone-icon {
     text-align: center;
 }
-.phone-icon img{
+
+.phone-icon img {
     width: 80%;
 }
 
@@ -158,59 +160,68 @@ header {
         justify-content: center;
         align-items: center;
     }
-    .bot-text{
+
+    .bot-text {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
     .bot-text p {
         width: 490px;
     }
-    .bot-text h1{
+
+    .bot-text h1 {
         font-size: 35px;
 
     }
-    
+
 
 }
 
-@media (min-width:1024px){
-    .bottom{
+@media (min-width:1024px) {
+    .bottom {
         display: flex;
         align-items: center;
         justify-content: space-around;
     }
-    .bot-text{
+
+    .bot-text {
         flex: 1.5;
         display: block;
         text-align: unset;
         margin-left: 60px;
     }
-    .bot-text h1{
+
+    .bot-text h1 {
         font-size: 35px;
 
     }
-    .bot-text p{
+
+    .bot-text p {
         padding-left: 0;
         width: 480px;
         text-align: left;
 
     }
-    .phone-icon{
+
+    .phone-icon {
         flex: 2;
 
     }
-    .phone-icon img{
+
+    .phone-icon img {
         margin-right: -30px;
 
     }
+
     .getstarted button {
         padding: 12px 50px;
 
     }
 
-    
+
 
 }
 
@@ -316,10 +327,11 @@ section img {
 /* MAIN PAGE SECTION MEDIA-QUERY */
 
 @media (max-width:1000px) and (min-width:700px) {
-    .pix img{
+    .pix img {
         width: 50%;
     }
 }
+
 @media (min-width: 1000px) {
     section {
         display: flex;
@@ -338,14 +350,15 @@ section img {
         position: relative;
 
     }
-    .push-right{
+
+    .push-right {
         /* display: flex;
         flex-direction: column;
         justify-content:center;
         align-items:flex-end; */
-       position: absolute;
-       bottom: 30%;
-       right: 0;
+        position: absolute;
+        bottom: 30%;
+        right: 0;
     }
 
     section img {
@@ -359,8 +372,8 @@ section img {
         bottom: -80px;
         padding-bottom: 30px;
     }
-    
-    .getstarted2 button{
+
+    .getstarted2 button {
         padding: 15px 90px;
         font-size: 15px;
     }
@@ -411,7 +424,8 @@ footer {
     text-align: center;
     margin-top: 5px;
 }
-.icon i:hover{
+
+.icon i:hover {
     color: hsl(322, 100%, 66%);
 }
 
