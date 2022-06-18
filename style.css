@@ -146,3 +146,85 @@ section{
     flex: 3;
     margin-left: 130px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bot-text{
+    text-align: center;
+}
+
+
+}
+
+@media (min-width:700px) {
+.phone-icon img {
+    width: 700px;
+    /* margin-right: 60px; */
+
+}
+.bot-text, .bot-text p {
+    text-align: left;
+}
+
+}
+
+@media (min-width:500px) {
+
+.bot-text {
+    /* display: flex; */
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+.bot-text h1 {
+    font-size: 35px;
+    /* margin-left: 45px; */
+}
+
+.bot-text p {
+
+    width: 490px;
+    /* margin-left: 10px; */
+
+}
+.getstarted{
+    /* margin-left: 45px; */
+
+}
+
+.bottom {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+}
+
+@media (max-width: 710px) {
+.phone-icon img {
+    width: 80%;
+}
+
+}
+
+

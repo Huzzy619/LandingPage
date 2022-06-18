@@ -12,10 +12,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
     color: hsl(192, 100%, 9%);
     min-height: 100%;
     display: flex;
     flex-direction: column;
+
 }
 
 header {
@@ -25,8 +27,7 @@ header {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
 }
 
 
@@ -66,78 +67,11 @@ header {
     /* vertical-align: top; */
 }
 
-
-
-.bot-text {
-    text-align: center;
-}
-
-.bot-text h1 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-}
-
-.bot-text p {
-    text-align: center;
-    /* width: 80%; */
-    line-height: 25px;
-    padding-left: 40px;
-    padding-right: 40px;
-    /* font-weight: 400; */
-}
-
-.getstarted {
-    margin-top: 30px;
-}
-
-.getstarted button {
-    background-color: hsl(322, 100%, 66%);
-    padding: 8px 50px;
-    border: none;
-    border-radius: 30px;
-    color: whitesmoke;
-    font-family: Poppins;
-    font-weight: 600;
-    transition: 0.5s;
-    margin-bottom: 60px;
-}
-
-.getstarted button:hover {
-    opacity: 0.5;
+.free:hover {
+    color: hsl(208, 11%, 55%);
     cursor: pointer;
 }
-
-.phone-icon {
-    text-align: center;
-}
-
-.phone-icon img {
-    width: 80%;
-}
-
-@media (min-width:500px) {
-    
-    .bot-text{
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-    }
-    .bot-text{
-        /* margin-right: 90px; */
-    }
-    .bot-text h1{
-        font-size: 35px;
-
-    }
-    .bot-text p{
-        
-        width: 490px;
-
-    }
-}
-
+/* TOP- MOST SECTION MEDIA-QUERY */
 
 @media (min-width:500px) {
     header {
@@ -166,36 +100,142 @@ header {
         margin-top: -45px;
 
     }
-    .bottom{
-        display: flex;
-        /* flex-wrap: wrap; */
-        /* justify-content: space-between; */
+}
+
+
+
+
+.bot-text {
+    text-align: center;
+}
+
+.bot-text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: hsl(192, 100%, 9%);
+}
+
+.bot-text p {
+    text-align: center;
+    /* width: 80%; */
+    line-height: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    /* font-weight: 400; */
+}
+
+.getstarted {
+    margin-top: 30px;
+}
+
+.getstarted button {
+    background-color: hsl(322, 100%, 66%);
+    padding: 8px 50px;
+    border: none;
+    border-radius: 30px;
+    color: whitesmoke;
+    font-family: Poppins;
+    font-weight: 600;
+    transition: 0.5s;
+    margin-bottom: 60px;
+}
+
+.getstarted button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.phone-icon {
+    text-align: center;
+}
+.phone-icon img{
+    width: 80%;
+}
+
+@media (min-width:500px) and (max-width:1024px) {
+    header {
+        justify-content: center;
+        align-items: center;
     }
-   
-    .phone-icon img{
-        width: 800px;
+    .bot-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bot-text p {
+        width: 490px;
+    }
+    .bot-text h1{
+        font-size: 35px;
 
     }
+    
+
 }
+
+@media (min-width:1024px){
+    .bottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .bot-text{
+        flex: 1.5;
+        display: block;
+        text-align: unset;
+        margin-left: 60px;
+    }
+    .bot-text h1{
+        font-size: 35px;
+
+    }
+    .bot-text p{
+        padding-left: 0;
+        width: 480px;
+        text-align: left;
+
+    }
+    .phone-icon{
+        flex: 2;
+
+    }
+    .phone-icon img{
+        margin-right: -30px;
+
+    }
+    .getstarted button {
+        padding: 12px 50px;
+
+    }
+
+    
+
+}
+
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 80px;
-    padding-bottom: 150px;
+    padding-top: 200px;
+    padding-bottom: 300px;
     position: relative;
 }
 
 section {
-    width: 90%;
+    width: 85%;
     border-radius: 10px;
     box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.1);
     padding-top: 60px;
     padding-bottom: 20px;
     margin-bottom: 50px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .pix {
@@ -209,7 +249,7 @@ section img {
 }
 
 .illustration-text p {
-    line-height: 23px;
+    line-height: 30px;
     color: hsl(208, 11%, 55%);
 
 }
@@ -228,7 +268,10 @@ section img {
     /*  */
 }
 
-.Build {
+
+
+
+.build {
     text-align: center;
     font-size: 17px;
     font-weight: 600;
@@ -237,9 +280,15 @@ section img {
     z-index: 1;
     background-color: white;
     position: absolute;
-    bottom: -130px;
+    bottom: -50px;
     padding-top: 30px;
     max-width: 700px;
+    box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    border-radius: 10px;
+    min-width: 300px;
+
+
 
 }
 
@@ -263,6 +312,62 @@ section img {
     opacity: 0.5;
     cursor: pointer;
 }
+
+/* MAIN PAGE SECTION MEDIA-QUERY */
+
+@media (max-width:1000px) and (min-width:700px) {
+    .pix img{
+        width: 50%;
+    }
+}
+@media (min-width: 1000px) {
+    section {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-left: 70px;
+        padding-right: 20px;
+
+    }
+
+    .reverse {
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+
+    }
+    .push-right{
+        /* display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:flex-end; */
+       position: absolute;
+       bottom: 30%;
+       right: 0;
+    }
+
+    section img {
+        width: 400px;
+        /* width: 40%; */
+    }
+
+    .build {
+        flex-direction: column;
+        font-size: 25px;
+        bottom: -80px;
+        padding-bottom: 30px;
+    }
+    
+    .getstarted2 button{
+        padding: 15px 90px;
+        font-size: 15px;
+    }
+}
+
+
+
 
 @media (min-width: 500px) {
     .Build {
@@ -305,6 +410,9 @@ footer {
 .icon {
     text-align: center;
     margin-top: 5px;
+}
+.icon i:hover{
+    color: hsl(322, 100%, 66%);
 }
 
 ul {
@@ -353,6 +461,7 @@ ul li a {
     .copy {
         float: right;
         font-size: 14px;
+        margin-right: 80px;
     }
 
     .rem1,
